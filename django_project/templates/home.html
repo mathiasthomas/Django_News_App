@@ -3,9 +3,11 @@
 
 {% block content %}
 
-    {% if is_authenticated %}
+    {% if user.is_authenticated %}
 
     Hi {{ user.username }}
+        -- Age {{ user.age }}
+
 
     {% else %}
 
